@@ -23,7 +23,7 @@ public class Cinema {
 
     private String checkCalendar(Movie movie, LocalDateTime time) {
         for (LocalDateTime currentTime : movie.getCalendar()) {
-            if (String.valueOf(currentTime).equals(String.valueOf(time))) {
+            if (currentTime.equals(time)) {
                 return movie.getName();
             }
         }
