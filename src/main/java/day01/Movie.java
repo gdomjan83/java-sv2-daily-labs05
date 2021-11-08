@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Movie {
     private String name;
-    private List<LocalDateTime> calendar = new ArrayList<>();
+    private List<LocalDateTime> calendar;
 
     public Movie(String name, List<LocalDateTime> calendar) {
         this.name = name;
